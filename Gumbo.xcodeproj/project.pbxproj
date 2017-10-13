@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BCD38631F82E35400FA62DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCD38621F82E35400FA62DE /* AppDelegate.swift */; };
+		9BCD38651F82E35400FA62DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCD38641F82E35400FA62DE /* ViewController.swift */; };
+		9BCD38681F82E35400FA62DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCD38661F82E35400FA62DE /* Main.storyboard */; };
+		9BCD386A1F82E35400FA62DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BCD38691F82E35400FA62DE /* Assets.xcassets */; };
+		9BCD386D1F82E35400FA62DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCD386B1F82E35400FA62DE /* LaunchScreen.storyboard */; };
+		9BCD38751F82F27700FA62DE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCD38741F82F27700FA62DE /* AVFoundation.framework */; };
+		9BCD38771F82F28300FA62DE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCD38761F82F28300FA62DE /* SystemConfiguration.framework */; };
+		9BCD38791F82F9B700FA62DE /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCD38781F82F9B700FA62DE /* Configs.swift */; };
+		9BCD387B1F82FE9500FA62DE /* SpotifyHelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCD387A1F82FE9500FA62DE /* SpotifyHelperFunctions.swift */; };
+		9BCD388A1F83C10500FA62DE /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCD38871F83C0AE00FA62DE /* SpotifyAudioPlayback.framework */; };
+		9BCD388B1F83C10E00FA62DE /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCD38891F83C0AE00FA62DE /* SpotifyAuthentication.framework */; };
+		9BCD388C1F83C10E00FA62DE /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCD38881F83C0AE00FA62DE /* SpotifyMetadata.framework */; };
+		9BCD388E1F83EF1900FA62DE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCD388D1F83EF1900FA62DE /* SearchViewController.swift */; };
+		E145CCC6D9740C8ADA256E27 /* Pods_Gumbo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48B8E887BBCB52A5D56A95F /* Pods_Gumbo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		291DB275DA9C4573556B6586 /* Pods-Gumbo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gumbo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gumbo/Pods-Gumbo.release.xcconfig"; sourceTree = "<group>"; };
+		87F7871BC0D0424D80C44DA8 /* Pods-Gumbo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gumbo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gumbo/Pods-Gumbo.debug.xcconfig"; sourceTree = "<group>"; };
+		9BCD385F1F82E35400FA62DE /* Gumbo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gumbo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BCD38621F82E35400FA62DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BCD38641F82E35400FA62DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BCD38671F82E35400FA62DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BCD38691F82E35400FA62DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BCD386C1F82E35400FA62DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BCD386E1F82E35400FA62DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BCD38741F82F27700FA62DE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9BCD38761F82F28300FA62DE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9BCD38781F82F9B700FA62DE /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		9BCD387A1F82FE9500FA62DE /* SpotifyHelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyHelperFunctions.swift; sourceTree = "<group>"; };
+		9BCD38831F83BECC00FA62DE /* Gumbo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gumbo-Bridging-Header.h"; sourceTree = "<group>"; };
+		9BCD38871F83C0AE00FA62DE /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		9BCD38881F83C0AE00FA62DE /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		9BCD38891F83C0AE00FA62DE /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		9BCD388D1F83EF1900FA62DE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F48B8E887BBCB52A5D56A95F /* Pods_Gumbo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gumbo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BCD385C1F82E35400FA62DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BCD388B1F83C10E00FA62DE /* SpotifyAuthentication.framework in Frameworks */,
+				9BCD388C1F83C10E00FA62DE /* SpotifyMetadata.framework in Frameworks */,
+				9BCD388A1F83C10500FA62DE /* SpotifyAudioPlayback.framework in Frameworks */,
+				9BCD38771F82F28300FA62DE /* SystemConfiguration.framework in Frameworks */,
+				9BCD38751F82F27700FA62DE /* AVFoundation.framework in Frameworks */,
+				E145CCC6D9740C8ADA256E27 /* Pods_Gumbo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		833F52D8C393CBDF2173956C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BCD38871F83C0AE00FA62DE /* SpotifyAudioPlayback.framework */,
+				9BCD38891F83C0AE00FA62DE /* SpotifyAuthentication.framework */,
+				9BCD38881F83C0AE00FA62DE /* SpotifyMetadata.framework */,
+				9BCD38761F82F28300FA62DE /* SystemConfiguration.framework */,
+				9BCD38741F82F27700FA62DE /* AVFoundation.framework */,
+				F48B8E887BBCB52A5D56A95F /* Pods_Gumbo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BCD38561F82E35400FA62DE = {
+			isa = PBXGroup;
+			children = (
+				9BCD38611F82E35400FA62DE /* Gumbo */,
+				9BCD38601F82E35400FA62DE /* Products */,
+				D2DE9AAC9E2F437B9706C14F /* Pods */,
+				833F52D8C393CBDF2173956C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9BCD38601F82E35400FA62DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BCD385F1F82E35400FA62DE /* Gumbo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BCD38611F82E35400FA62DE /* Gumbo */ = {
+			isa = PBXGroup;
+			children = (
+				9BCD38831F83BECC00FA62DE /* Gumbo-Bridging-Header.h */,
+				9BCD38621F82E35400FA62DE /* AppDelegate.swift */,
+				9BCD38661F82E35400FA62DE /* Main.storyboard */,
+				9BCD38781F82F9B700FA62DE /* Configs.swift */,
+				9BCD387A1F82FE9500FA62DE /* SpotifyHelperFunctions.swift */,
+				9BCD38641F82E35400FA62DE /* ViewController.swift */,
+				9BCD388D1F83EF1900FA62DE /* SearchViewController.swift */,
+				9BCD38691F82E35400FA62DE /* Assets.xcassets */,
+				9BCD386B1F82E35400FA62DE /* LaunchScreen.storyboard */,
+				9BCD386E1F82E35400FA62DE /* Info.plist */,
+			);
+			path = Gumbo;
+			sourceTree = "<group>";
+		};
+		D2DE9AAC9E2F437B9706C14F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87F7871BC0D0424D80C44DA8 /* Pods-Gumbo.debug.xcconfig */,
+				291DB275DA9C4573556B6586 /* Pods-Gumbo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BCD385E1F82E35400FA62DE /* Gumbo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BCD38711F82E35400FA62DE /* Build configuration list for PBXNativeTarget "Gumbo" */;
+			buildPhases = (
+				B15B57BA6B16A68EF35A78A3 /* [CP] Check Pods Manifest.lock */,
+				9BCD385B1F82E35400FA62DE /* Sources */,
+				9BCD385C1F82E35400FA62DE /* Frameworks */,
+				9BCD385D1F82E35400FA62DE /* Resources */,
+				1B2E7020491C10158CA79DCB /* [CP] Embed Pods Frameworks */,
+				02E11843D098AB421307CE38 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gumbo;
+			productName = Gumbo;
+			productReference = 9BCD385F1F82E35400FA62DE /* Gumbo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BCD38571F82E35400FA62DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "RedRooster Technologies Inc.";
+				TargetAttributes = {
+					9BCD385E1F82E35400FA62DE = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 9BCD385A1F82E35400FA62DE /* Build configuration list for PBXProject "Gumbo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BCD38561F82E35400FA62DE;
+			productRefGroup = 9BCD38601F82E35400FA62DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BCD385E1F82E35400FA62DE /* Gumbo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BCD385D1F82E35400FA62DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BCD386D1F82E35400FA62DE /* LaunchScreen.storyboard in Resources */,
+				9BCD386A1F82E35400FA62DE /* Assets.xcassets in Resources */,
+				9BCD38681F82E35400FA62DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02E11843D098AB421307CE38 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gumbo/Pods-Gumbo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B2E7020491C10158CA79DCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gumbo/Pods-Gumbo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gumbo/Pods-Gumbo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B15B57BA6B16A68EF35A78A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gumbo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BCD385B1F82E35400FA62DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BCD388E1F83EF1900FA62DE /* SearchViewController.swift in Sources */,
+				9BCD38651F82E35400FA62DE /* ViewController.swift in Sources */,
+				9BCD38631F82E35400FA62DE /* AppDelegate.swift in Sources */,
+				9BCD387B1F82FE9500FA62DE /* SpotifyHelperFunctions.swift in Sources */,
+				9BCD38791F82F9B700FA62DE /* Configs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9BCD38661F82E35400FA62DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BCD38671F82E35400FA62DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BCD386B1F82E35400FA62DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BCD386C1F82E35400FA62DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BCD386F1F82E35400FA62DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9BCD38701F82E35400FA62DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BCD38721F82E35400FA62DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87F7871BC0D0424D80C44DA8 /* Pods-Gumbo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Gumbo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "redroostertech.Gumbo-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gumbo/Gumbo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BCD38731F82E35400FA62DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 291DB275DA9C4573556B6586 /* Pods-Gumbo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Gumbo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "redroostertech.Gumbo-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gumbo/Gumbo-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BCD385A1F82E35400FA62DE /* Build configuration list for PBXProject "Gumbo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BCD386F1F82E35400FA62DE /* Debug */,
+				9BCD38701F82E35400FA62DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BCD38711F82E35400FA62DE /* Build configuration list for PBXNativeTarget "Gumbo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BCD38721F82E35400FA62DE /* Debug */,
+				9BCD38731F82E35400FA62DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BCD38571F82E35400FA62DE /* Project object */;
+}
